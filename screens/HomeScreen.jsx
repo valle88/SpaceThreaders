@@ -2,8 +2,7 @@ import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import { useState, useEffect } from "react";
 
 import spaceTradersServices from "../services/spaceTraders";
-import { TextInput } from "react-native-gesture-handler";
-import { color } from "react-native-reanimated";
+i
 
 const HomeScreen = () => {
   const [profile, setProfile] = useState();
@@ -22,11 +21,11 @@ const HomeScreen = () => {
     <ImageBackground source={require("../assets/home.jpg")} resizeMode="stretch">
       <View style={styles.centrar}>
 
-        {!profile ? <Text>Buscando datos...</Text> : <Text style={styles.text}>Usuario: {profile.user.username}</Text>}
-        {!profile ? <Text>Buscando datos...</Text> : <Text style={styles.text}>Número de naves: {profile.user.shipCount}</Text>}
-        {!profile ? <Text>Buscando datos...</Text> : <Text style={styles.text}>Número de estructuras: {profile.user.structureCount}</Text>}
-        {!profile ? <Text>Buscando datos...</Text> : <Text style={styles.text}>Créditos: {profile.user.credits}</Text>}
-        {!profile ? <Text>Buscando datos...</Text> : <Text style={styles.text}>Se unió en: {profile.user.joinedAt}</Text>}
+        {!profile ? <Text style={styles.text}>Buscando datos...</Text> : <Text style={styles.text}>Usuario: {profile.user.username}</Text>}
+        {!profile ? <Text style={styles.text}>Buscando datos...</Text> : <Text style={styles.text}>Número de naves: {profile.user.shipCount}</Text>}
+        {!profile ? <Text style={styles.text}>Buscando datos...</Text> : <Text style={styles.text}>Número de estructuras: {profile.user.structureCount}</Text>}
+        {!profile ? <Text style={styles.text}>Buscando datos...</Text> : <Text style={styles.text}>Créditos: {profile.user.credits}</Text>}
+        {!profile ? <Text style={styles.text}>Buscando datos...</Text> : <Text style={styles.text}>Se unió en: {profile.user.joinedAt}</Text>}
 
 
       </View>
@@ -40,9 +39,9 @@ const styles = StyleSheet.create({
     
   },
   text:{
-    color: 'white',
+    color: '#FBFBFB',
     fontSize: '20px',
-    fontWeight: 'bold',
+    
 
   }
 })
