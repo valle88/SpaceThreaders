@@ -10,7 +10,7 @@ const SignInScreen = ({setSignIn}) => {
       const userProfile = await spaceTraders.getUserProfile();
       setSignIn(userProfile);
 
-      alert(`User: ${userProfile.user.username}\nSigned in successfully`)
+      alert(`User: ${userProfile.user.username}\nInicio de sesión con éxito`)
 
     } catch(err) {
       console.log(err.message);
@@ -20,7 +20,7 @@ const SignInScreen = ({setSignIn}) => {
   return (
     <View style={styles.container}>
       <View style={styles.formContainer}>
-        <Text style={styles.textBold}>Please introduce your Token</Text>
+        <Text style={styles.textBold}>Porfavor introduzca su Token</Text>
         <TextInput
           style={styles.inputContainer}
           onChangeText={onChangeText}

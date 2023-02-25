@@ -2,7 +2,7 @@ import { Text } from 'react-native';
 
 const CreditScreen = () => {
   return (
-    <Text>LoansScreen</Text>
+    <Text>credit</Text>
   );
 };
 

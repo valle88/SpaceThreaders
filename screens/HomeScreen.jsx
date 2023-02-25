@@ -18,11 +18,12 @@ const HomeScreen = () => {
 
   return (
     <View>
-      {!profile ? <Text>Buscando datos...</Text> : <Text>Usuario: {profile.user.username}</Text>}
-      {!profile ? <Text>Buscando datos...</Text> : <Text>Número de naves: {profile.user.shipCount}</Text>}
-      {!profile ? <Text>Buscando datos...</Text> : <Text>Número de estructuras: {profile.user.structureCount}</Text>}
-      {!profile ? <Text>Buscando datos...</Text> : <Text>Créditos: {profile.user.credits}</Text>}
-      {!profile ? <Text>Buscando datos...</Text> : <Text>Se unió en: {profile.user.joinedAt}</Text>}
+      <Text>Usuario: {profile.user.username}</Text>
+      <Text>Número de naves: {profile.user.shipCount}</Text>
+      <Text>Número de estructuras: {profile.user.structureCount}</Text>
+      <Text>Créditos: {profile.user.credits}</Text>
+      <Text>Se unió en: {profile.user.joinedAt}</Text>
+    
     </View> 
   );
 };
