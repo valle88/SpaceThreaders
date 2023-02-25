@@ -7,13 +7,13 @@ const SignUpScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.formContainer}>
-        <Text style={styles.textBold}>Please, select your Nickname</Text>
+        <Text style={styles.textBold}>Porfavor ponga si Nick</Text>
         <TextInput
           style={styles.inputContainer}
           onChangeText={onChangeText}
           value={text} 
         />
-        <Pressable style={styles.registerBtn} onPress={() => console.log('Register')}><Text>Register</Text></Pressable>
+        <Pressable style={styles.registerBtn} onPress={() => console.log('Registrar')}><Text>Register</Text></Pressable>
       </View>
     </View>
   ); 
