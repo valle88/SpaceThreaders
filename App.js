@@ -20,7 +20,7 @@ export default function App() {
       <NavigationContainer>
         <Drawer.Navigator initialRouteName='Login'>
           <Drawer.Screen name='Login' component={LoginScreen} options={{headerShown: false}} />
-          <Drawer.Screen name='ConectScreen' options={{headerShown: false}}>
+          <Drawer.Screen name='Conect' options={{headerShown: false}}>
             {() => <ConectScreen setSignIn={setSignIn} />}
           </Drawer.Screen>
           <Drawer.Screen name='SignUp' component={RegisterScreen} options={{ headerShown: false }} />

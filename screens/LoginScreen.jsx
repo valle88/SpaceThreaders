@@ -7,7 +7,7 @@ const LoginScreen = ({ navigation }) => {
     <View style={styles.container}>
       
         <View style={styles.Container1}>
-          <Pressable style={styles.login} onPress={() => navigation.navigate('ConectScreen')}><Text>Login</Text></Pressable>
+          <Pressable style={styles.login} onPress={() => navigation.navigate('Conect')}><Text>Login</Text></Pressable>
           <Pressable style={styles.register} onPress={() => navigation.navigate('SignUp')}><Text>Register</Text></Pressable>
         </View>
      

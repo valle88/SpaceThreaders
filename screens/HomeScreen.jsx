@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import { useState, useEffect } from "react";
 
 import spaceTradersServices from "../services/spaceTraders";
-i
+
 
 const HomeScreen = () => {
   const [profile, setProfile] = useState();

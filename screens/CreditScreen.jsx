@@ -51,7 +51,7 @@ const CreditScreen = ({userToken}) => {
           <Text>Rate: {credit.rate}%</Text>
           <Text>Term: {credit.termInDays} days</Text>
           <Text>Type: {credit.type}</Text>
-          <Button style={styles.button} title="Take out" onPress={handleTakeOutCredit} />
+          <Button style={styles.button} title="Sacar" onPress={handleTakeOutCredit} />
         </View>
       </View>
     );
