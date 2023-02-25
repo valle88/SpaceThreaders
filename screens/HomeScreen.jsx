@@ -18,7 +18,7 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <ImageBackground source={require("../assets/home.jpg")} resizeMode="stretch">
+   
       <View style={styles.centrar}>
 
         {!profile ? <Text style={styles.text}>Buscando datos...</Text> : <Text style={styles.text}>Usuario: {profile.user.username}</Text>}
@@ -29,7 +29,7 @@ const HomeScreen = () => {
 
 
       </View>
-    </ImageBackground>
+   
   );
 };
 const styles = StyleSheet.create({
