@@ -1,23 +1,24 @@
 import { useState } from 'react';
-import { Text, StyleSheet, View, Pressable, TextInput } from 'react-native';
+import { Text, StyleSheet, View, Pressable, TextInput, ImageBackground } from 'react-native';
 import spaceTraders from '../services/spaceTraders';
 
-const SignInScreen = ({setSignIn}) => {
+const SignInScreen = ({ setSignIn }) => {
   const [text, onChangeText] = useState('');
 
   const handleLogin = async () => {
-    try{
+    try {
       const userProfile = await spaceTraders.getUserProfile();
       setSignIn(userProfile);
 
       alert(`User: ${userProfile.user.username}\nInicio de sesión con éxito`)
 
-    } catch(err) {
+    } catch (err) {
       console.log(err.message);
     }
   }
 
   return (
+    <ImageBackground source={require("../assets/crewDragen.jpg")} resizeMode="stretch">
     <View style={styles.container}>
       <View style={styles.formContainer}>
         <Text style={styles.textBold}>Porfavor introduzca su Token</Text>
@@ -29,6 +30,7 @@ const SignInScreen = ({setSignIn}) => {
         <Pressable style={styles.loginBtn} onPress={() => handleLogin()}><Text>Login</Text></Pressable>
       </View>
     </View>
+    </ImageBackground >
   ); 
 };
 
