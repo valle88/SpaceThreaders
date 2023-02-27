@@ -21,10 +21,10 @@ const SignInScreen = ({ setSignIn }) => {
   return (
     <ImageBackground source={require("../assets/home.jpg")} resizeMode="stretch">
     <View style={styles.container}>
-      <View style={styles.formContainer}>
+      <View style={styles.form}>
         <Text style={styles.text}>Porfavor introduzca su Token</Text>
         <TextInput
-          style={styles.inputContainer}
+          style={styles.input}
           onChangeText={onChangeText}
           value={text} 
         />
@@ -41,14 +41,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start'
   },
-  formContainer: {
+  form: {
     alignItems: 'center',
     justifyContent: 'space-evenly',
     marginTop: '25%',
     width: 300,
     height: 200
   },
-  inputContainer: {
+  input: {
     width: '75%',
     borderWidth: 1,
     borderRadius: 10,
